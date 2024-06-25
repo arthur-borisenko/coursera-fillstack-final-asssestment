@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  db:
+    image: mysql:8
+    environment:
+      MYSQL_ROOT_PASSWORD: qwerty
+      MYSQL_DATABASE: restaurant
+      MYSQL_USER: app
+      MYSQL_PASSWORD: qwerty
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql_data1:/var/lib/mysql
+
+volumes:
+  mysql_data1:
+
