@@ -6,3 +6,5 @@ from .models import Booking
 
 
 admin.site.register(Menu)
+
+admin.site.register(Booking)
